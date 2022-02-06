@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour And Travels</title>
+    <link rel="stylesheet" href="/Css/tours&travel.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="menu" class="fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>ravel</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">Packages</a>
+            <a href="#services">Services</a>
+            <a href="#gallary">Gallary</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="form">
+            <input type="search" placeholder="Search here ....">
+            <label for="search-bar" class="fas fa-search"></label>        
+        </form>
+
+    </header>
+
+    <div class="login-form">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <input type="email" placeholder="Enter Your Email" class="box">
+            <input type="password" placeholder="Enter Your Password" class="box">
+            <input type="submit" value="Login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+            <p>Forget Password <a href="#">Click Here</a></p>
+            <p>Don't have any account <a href="#">Register now</a></p>
+        </form>
+    </div>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Adventure is Worthwhile</h3>
+            <p>Discover new palce with us, adventure awaits</p>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="Images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="Images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="Images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="Images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="Images/vid-5.mp4"></span>
+        </div>
+
+        <div class="video">
+            <video src="/Images/vid-1.mp4" id="vid-slide" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <section class="book" id="book">
+
+    </section>
+
+    <script src="/Javascript/t&t.js"></script>
+
+</body>
+
+</html>
