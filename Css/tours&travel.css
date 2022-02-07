@@ -46,13 +46,13 @@ html{
 .btn{
     display: inline-block;
     margin-top: 1rem;
-    background: var(--orange);
-    color: white;
-    padding: 8rem 3rem;
-    border: 2rem solid var(--orange);
+    background:var(--orange);
+    color:#fff;
+    padding:.8rem 3rem;
+    border:.2rem solid var(--orange);
     cursor: pointer;
     font-size: 1.7rem;
-}
+  }
 
 .btn:hover{
     background: rgba(255, 165, 0, 0.2);
@@ -102,13 +102,25 @@ header .icons i:hover{
     color: var(--orange);
 }
 
-header .form{
+header form{
     position: absolute;
     top: 100%; left: 0; right: 0;
     padding: 1.5rem 2rem;
     background: #333;
     border-top: 1rem solid rgba(255, 255, 255, 0.2);
     display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0. 0 0);
+}
+
+header .form{
+    position: relative;
+    top: 100%; left: 0; right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    border-top: 1rem solid rgba(255, 255, 255, 0.2);
+    display: none;
     align-items: center;
     z-index: 1001;
     clip-path: polygon(0 0, 100% 0, 100% 0. 0 0);
@@ -285,4 +297,100 @@ header .form label:hovr{
 
 .home .controls .vid-btn.active{
     background: var(--orange);
+}
+
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.book .row image{
+    flex: 1 1 40rem;
+}
+
+.book .row image img{
+    width: 100%;
+}
+
+.book .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0, 0.1);
+    border-radius: 00.5rem;
+}
+
+.book .row form .input{
+    padding: 0.5rem  0;
+}
+
+.book .row form .input input{
+    width: 100%;
+    padding: 1rem;
+    border: 1rem solid rgba(0,0,0, 0.1);
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+}
+
+.book .row form .input h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #666;
+}
+
+.pack .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.pack .container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem rgba(0,0,0,0.1);
+}
+
+.pack .container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pack .container .box .content{
+    padding: 2rem;
+}
+
+.pack .container .box .content h3{
+    font-size: 2rem;
+    color: #333;
+}
+
+.pack .container .box .content h3 i{
+    color: var(--orange);
+}
+
+.pack .container .box .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.pack .container .box .content .star i{
+    font-size: 1.7rem;
+    color: var(--orange);
+}
+
+.pack .container .box .content .price{
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.pack .container .box .content .price span{
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
 }
